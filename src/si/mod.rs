@@ -93,6 +93,7 @@ system! {
         heat_capacity::HeatCapacity,
         heat_flux_density::HeatFluxDensity,
         heat_transfer::HeatTransfer,
+        hydraulic_permeability::HydraulicPermeability,
         inductance::Inductance,
         information::Information,
         information_rate::InformationRate,
@@ -191,6 +192,12 @@ pub mod marker {
     /// let r: Ratio = a.into();
     /// ```
     pub trait AngleKind: Kind {}
+
+    /// `HydraulicPermeabilityKind` is a `Kind` for separating hydraulic permeability from their
+    /// identically dimensioned non-hydraulic permeability counterparts (typically Area). Conversions
+    /// to and from `AngleKind` quantities are supported through implementations of the `From`
+    /// trait.
+    pub trait HydraulicPermeabilityKind: Kind {}
 
     /// `SolidAngleKind` is a `Kind` for separating quantities of solid angles from other
     /// identically dimensioned quantities. Conversions to and from `SolidAngleKind` quantities are
@@ -385,6 +392,8 @@ pub mod marker {
         };
     }
 
+    impl_from!(HydraulicPermeabilityKind, Kind);
+    impl_from!(Kind, HydraulicPermeabilityKind);
     impl_from!(AngleKind, Kind);
     impl_from!(Kind, AngleKind);
     impl_from!(SolidAngleKind, Kind);
