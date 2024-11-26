@@ -54,7 +54,7 @@ quantity! {
         @atmosphere: 1.013_25_E5; "atm", "atmosphere", "atmospheres";
         @atmosphere_technical: 9.806_65_E4; "at", "atmosphere (technical)",
             "atmospheres (technical)";
-        @bar: 1.0_E5; "bar", "bar", "bar";
+        @bar: 1.0_E5; "bar", "bar", "bars";
         @centimeter_of_mercury_0: 1.333_22_E3; "cm Hg (0 °C)", "centimeter of mercury (0 °C)",
             "centimeters of mercury (0 °C)";
         @centimeter_of_mercury: 1.333_224_E3; "cm Hg", "centimeter of mercury",

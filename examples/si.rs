@@ -10,6 +10,7 @@ fn main() {
     // Setup length and time quantities using different units.
     let l1 = Length::new::<meter>(15.0);
     let l2 = Length::new::<centimeter>(10.0);
+    //let comp = Compressibility::new(); 
     let t1 = Time::new::<second>(50.0);
     let v1 = l1 / t1;
     //let error = l1 + t1; // error[E0308]: mismatched types
