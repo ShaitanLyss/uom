@@ -66,6 +66,7 @@ system! {
         catalytic_activity::CatalyticActivity,
         catalytic_activity_concentration::CatalyticActivityConcentration,
         curvature::Curvature,
+        compressibility::Compressibility,
         diffusion_coefficient::DiffusionCoefficient,
         dynamic_viscosity::DynamicViscosity,
         electric_charge::ElectricCharge,
