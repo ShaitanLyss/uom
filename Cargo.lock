@@ -33,13 +33,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
-name = "edition_check"
-version = "0.1.0"
-dependencies = [
- "uom",
-]
-
-[[package]]
 name = "env_logger"
 version = "0.8.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -50,10 +43,19 @@ dependencies = [
 ]
 
 [[package]]
-name = "feature_check"
-version = "0.1.0"
+name = "geoscience-uom"
+version = "0.37.0"
 dependencies = [
- "uom",
+ "approx",
+ "num-bigint",
+ "num-complex",
+ "num-rational",
+ "num-traits",
+ "quickcheck",
+ "serde",
+ "serde_json",
+ "static_assertions",
+ "typenum",
 ]
 
 [[package]]
@@ -284,22 +286,6 @@ name = "unicode-ident"
 version = "1.0.13"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e91b56cd4cadaeb79bbf1a5645f6b4f8dc5bde8834ad5894a8db35fda9efa1fe"
-
-[[package]]
-name = "uom"
-version = "0.37.0"
-dependencies = [
- "approx",
- "num-bigint",
- "num-complex",
- "num-rational",
- "num-traits",
- "quickcheck",
- "serde",
- "serde_json",
- "static_assertions",
- "typenum",
-]
 
 [[package]]
 name = "uom-macros"

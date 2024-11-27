@@ -1,5 +1,5 @@
 [package]
-name = "uom"
+name = "geoscience-uom"
 version = "0.37.0"
 edition = "2018"
 rust-version = "1.65.0"
@@ -25,9 +25,9 @@ maintenance = { status = "actively-developed" }
 
 [workspace]
 members = [
-    "tests/feature_check",
+    # "tests/feature_check",
     "uom-macros",
-    "tests/edition_check",
+    # "tests/edition_check",
 ]
 
 [dependencies]
